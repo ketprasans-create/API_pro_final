@@ -1,0 +1,19 @@
+{
+  "name": "lomfa-backend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ลมฟ้า — Express API (ดึง Open-Meteo, แปลงข้อมูล, Selection Sort)",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

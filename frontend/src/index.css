@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* โหมดสว่าง (ค่าเริ่มต้น) — ตัวเลขคือ R G B ใช้คู่กับ rgb(var(--c-xxx) / alpha) ใน tailwind.config.js */
+:root {
+  --c-page: 243 245 248;
+  --c-surface: 255 255 255;
+  --c-surface-2: 248 250 252;
+  --c-line: 226 232 240;
+  --c-ink: 21 33 46;
+  --c-muted: 138 147 166;
+  --c-chip: 242 244 247;
+  --c-orange-soft: 255 233 209;
+  --c-teal: 207 239 231;
+  --c-navy: 23 34 47;
+  --c-sky: 46 110 142;
+  --c-sky-soft: 230 241 246;
+  --weather-from: 220 238 252;
+  --weather-to: 255 246 230;
+  --air-from: 230 242 252;
+  --air-to: 234 247 247;
+}
+
+/* โหมดมืด — ใส่คลาส "dark" ที่ <html> (สลับจากหน้าตั้งค่า) */
+.dark {
+  color-scheme: dark; /* ให้ช่องเลือก/แถบเลื่อนของเบราว์เซอร์เป็นสีมืดตามไปด้วย */
+  --c-page: 15 20 26;
+  --c-surface: 24 32 42;
+  --c-surface-2: 30 40 52;
+  --c-line: 43 54 68;
+  --c-ink: 232 237 243;
+  --c-muted: 154 166 184;
+  --c-chip: 35 45 58;
+  --c-orange-soft: 59 44 22;
+  --c-teal: 17 36 39;
+  --c-navy: 11 18 26;
+  --c-sky: 74 147 184;
+  --c-sky-soft: 27 42 54;
+  --weather-from: 28 45 64;
+  --weather-to: 44 42 40;
+  --air-from: 26 45 59;
+  --air-to: 27 50 52;
+}
+
+body {
+  @apply bg-page text-ink font-sans;
+}
